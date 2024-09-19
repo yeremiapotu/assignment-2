@@ -1,6 +1,8 @@
 body {
   margin: 0;
   padding: 0;
+  max-width: 100vw;
+  width: 100%;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #3498db, #cc2eaa);
 }
@@ -87,4 +89,41 @@ body {
 
 .sender {
   font-style: italic;
+}
+
+.cake-mobilescreen {
+  margin: auto;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 100vw;
+    width: 100%;
+  }
+  .container {
+    width: auto;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .content-card {
+    width: auto;
+    margin-top: 0px;
+  }
+
+  .cake-mobilescreen {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .cake-mobilescreen img {
+    width: 250px;
+  }
+
+  .cake,
+  .balloon-content {
+    display: none;
+  }
 }
