@@ -115,7 +115,7 @@ body {
   .cake-mobilescreen {
     display: block;
     width: 100%;
-    margin: 0;
+    margin-bottom: 0;
   }
 
   .cake-mobilescreen img {
